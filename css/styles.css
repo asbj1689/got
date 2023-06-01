@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document: Styles stylesheets */
+.login-message{
+	color: #fff;
+}
+
+html, body{height: 100%;}
+body{
+	background: #000 url(../img/banner2.jpg) no-repeat;
+	background-size: cover;
+	background-position: bottom; 	
+	padding: 20px;
+	box-sizing: border-box;
+	}
+img{max-width: 100%; height: auto;}
+
+.page-top{position: relative;}
+.not-front .page-top{min-height: 200px;}
+.page-wrapper{height: 100%; max-width: 1080px; margin: 0 auto; position: relative;}
+.header{position: relative;}
+.logo{position: absolute; top: 0; left: 40px;}
+.menu{
+	background: rgba(0,0,0, .6);
+	position: absolute;
+	padding: 0 30px;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	z-index:10;
+	font-size: 1.8rem;
+}
+.menu ul{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	display: box;
+	display: flex;
+}
+.menu li{
+
+	height: 60px;
+	line-height: 60px;
+	list-style: none;
+	text-transform: uppercase;	
+}
+.menu li a{padding: 0 20px; color: #fff; text-decoration: none; display: block; transition: all .2s ease-in-out;}
+.menu li a:hover{
+	background-color: #77898b;
+	background-color: rgba(119,137,139, .7);
+	display: block;
+}
+.front .content > .main{
+	position: absolute;
+	bottom: 50px;
+	color: #dad4d6;
+}
+
+
+.front .block .img img{float: left;}
+
+.not-front .block .bd{
+
+	font-size: 16px;
+	line-height: 24px;
+	padding: 30px;
+
+}
+.page-img{margin-bottom: 30px;}
+.breadcrumb{color: #fff; font-size: 1.6rem; margin-bottom: 20px;}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document: Table styles */
+
+table{width: 100%; font-size: 1rem;}
+table thead{background: #ccc; font-weight: bold;}
+table tbody tr:nth-child(odd) {background: #eee;}
+table td {padding: 8px;}
+table tbody tr:hover{background: rgba(12, 217, 245, 1);}
+.admin{
+	background-color: #eee; }
+.position{
+	margin-top: 200px;
+	gap: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+/* Table column 4 is hidden when window width is equal or less than 768px */
+	.responsive-table tr td:nth-child(4n+4) {  
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+/* Table column 2 and 3 is hidden when window width is equal or less than 480px */
+	.responsive-table tr td:nth-child(2n+2),
+	.responsive-table tr td:nth-child(3n+3) {  
+		display: none;
+	}
+}
+

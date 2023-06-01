@@ -1,0 +1,223 @@
+/*++++++++++ BASIC BLOCK +++++++++*/
+.block{
+  position: relative; 
+  box-sizing: border-box;
+   margin-bottom:20px;
+}
+.block > *{box-sizing: border-box;}
+.block > .hd > *{margin: 0;}
+.block > .bd{overflow: hidden;}
+.block > .bd .main{
+  padding: 20px; 
+  font-size: 14px;
+}
+.block .img{overflow: hidden;}
+
+/*++++++++++ OUTER BOX +++++++++*/
+.box-1{
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-2:before, .box-2:after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.box-2:after{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+.box-3:before, .box-3:after{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.box-3:after{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+.box-4{
+  -webkit-box-shadow: 0 0 10px rgba(0,0, 0, 0.3);
+  -moz-box-shadow: 0 0 10px rgba(0,0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0,0, 0, 0.3);
+}
+/*++++++++++ STRUCTURE +++++++++*/
+.structure-1 .hd{ 
+  font-size: 18px;
+  padding: 10px;
+}
+.structure-1 .bd{padding: 0;}
+.structure-1 .ft{ 
+  margin: 10px;
+  display: inline-block;
+  display: none;
+  
+}
+
+.structure-2 .hd{ 
+  font-size: 14px;
+}
+.structure-2 .bd{padding: 20px 20px 50px 20px;}
+.structure-2 .ft{ 
+  position: absolute;
+  bottom:0;
+  width: 100%
+}
+.structure-3 .hd{ 
+  font-size: 14px;
+ 
+}
+.structure-3 h3{position: absolute; top: 50px; left: 0; max-width: 70%; background: rgba(255,255,255, 0.8); padding: 10px;}
+.structure-3 .bd{padding: 0 20px 30px 20px;}
+.structure-3 .ft{ 
+  position: absolute;
+  bottom:20px;
+  width: 100%;
+  text-align:right;
+  padding:0;
+  
+}
+.structure-3 .ft a{background: #999; display: inline-block; padding: 10px 20px; text-decoration: none; color:#fff;}
+
+
+/*+++++++++++++++ SHAPES +++++++++++++++*/
+.shape-1{
+  border-radius: 16px;
+  overflow:hidden;
+}
+
+
+
+/*++++++++++ COLOR SCHEME +++++++++*/
+.color-1{
+  background: #fff;
+  color: #000;
+}
+.color-1 .hd{
+  background: #fff; 
+  color: #222; 
+}
+.color-1 .bd{}
+
+.color-1 .ft{}
+.color-2{
+  background: #fff;
+  border: solid 1px #ccc;
+  color: #000;
+}
+.color-2 .hd{
+  background: #f1ef5f; 
+  border: solid 1px #fff; 
+  color: #9a992a;
+  font-weight: bold; 
+  text-transform: uppercase;
+}
+.color-2 .ft{
+  background: #f1ef5f; 
+  color: #9a992a;
+}
+.color-3{
+  background: #309614;
+  color: #fff;
+}
+.color-3 .hd{
+  text-transform: capitalize;
+  background: rgba(0,0,0, .5); 
+}
+.color-3 .ft{
+ background: rgba(0,0,0, .5);   
+}
+
+/* blue game of thrones */
+.color-4{color: #dad4d6;}
+.color-4 .hd{
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #77898b;
+  color: #94aaac;
+  background-color: rgba(0,0,0, .4);
+
+}
+
+.color-4 .main{ }
+.front .color-4 .img{
+  border-top: solid 1px #333;
+  border-bottom: solid 1px #333;
+ 
+}
+
+.color-4{
+  background-color: rgba(41,47,61, .7);
+
+}
+
+/*+++++++++++++++ TEXTURES +++++++++++++++*/
+
+.texture-1 .hd{
+  background-image: url(../img/icons/icon-book.png); 
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+/*+++++++++++++++ EFFECTS +++++++++++++++*/
+.effect-1{
+  transition: all .15s ease-in-out;
+}
+.effect-1:hover,
+.effect-1:active,
+.effect-1:focus{
+  transform: scale(1.2);
+  z-index: 999;
+  border-color: #6A6A6A;
+  -webkit-box-shadow: 0 0 30px rgba(0,0, 0, 0.5);
+  -moz-box-shadow: 0 0 30px rgba(0,0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0,0, 0, 0.5); 
+}
+
+/*+++++++++++++++ LANDSCAPE / PORTRAIT +++++++++++++++*/
+.landscape{}
+.landscape h3,
+.landscape p{}
+.landscape .bd{display: flex;}
+.landscape .bd > .img{margin-right: 20px; max-width: 80px; flex:none;}
+
+
+
+
+

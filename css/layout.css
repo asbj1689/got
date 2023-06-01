@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document: Layout styles */
+
+.float-left{
+  float: left; 
+  margin: 20px 40px 20px 0;
+}
+.float-right{
+  float: right; 
+  margin: 20px 0 20px 40px;
+}
+
+a{
+  display: flex;
+  align-self: center;
+}
